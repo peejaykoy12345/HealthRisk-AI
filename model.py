@@ -1,13 +1,13 @@
 import torch.nn as nn
 import torch.optim as optim
 
-class HealthRiskNet(nn.module):
-    def __init__(self, input_dim=5, output_dim=3):
-        super().__init__(self)
+class HealthRiskNet(nn.Module):
+    def __init__(self, input_dim=6, output_dim=3):
+        super().__init__()
 
         self.model = nn.Sequential(
             nn.Linear(input_dim, 64),
-            nn.ReLu(),
+            nn.ReLU(),
             nn.Linear(64, output_dim)
         )
 
@@ -16,7 +16,7 @@ class HealthRiskNet(nn.module):
     
     def fit(self, x, y, epochs):
         optimizer = optim.Adam(self.model.parameters(), lr=0.001)
-        criterion = nn.CrossEntropyLoss
+        criterion = nn.CrossEntropyLoss()
 
         for epoch in range(epochs):
             predictions = self.model(x) 
