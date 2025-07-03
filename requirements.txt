@@ -1,0 +1,8 @@
+Flask
+WTForms
+Flask-WTF
+gunicorn
+torch
+numpy
+pandas
+scikit-learn

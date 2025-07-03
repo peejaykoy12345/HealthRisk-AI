@@ -1,0 +1,36 @@
+<!-- templates/home.html -->
+{% extends "layout.html" %}
+
+{% block title %}Home | HealthRisk AI{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <h1>Predict Your Health Risk with AI</h1>
+    <p>Enter your basic information and lifestyle habits to get a real-time AI-powered health risk analysis.</p>
+    <a href="{{ url_for('predict') }}" class="btn btn-custom mt-4">Get Started</a>
+  </div>
+</section>
+
+<section class="features py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <i class="fas fa-heartbeat fa-3x text-primary mb-3"></i>
+        <h5>Cardio Risk</h5>
+        <p>Assess early signs of heart-related issues based on your blood pressure and habits.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="fas fa-user-md fa-3x text-success mb-3"></i>
+        <h5>Personalized Insights</h5>
+        <p>Receive predictions tailored to your age, gender, and unique lifestyle patterns.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="fas fa-chart-line fa-3x text-info mb-3"></i>
+        <h5>Data-Driven</h5>
+        <p>Powered by AI and trained on real health data for reliable predictions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
