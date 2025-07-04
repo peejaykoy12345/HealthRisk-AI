@@ -4,6 +4,7 @@ from pandas import read_csv
 from numpy import hstack, array
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler
+from pickle import dump
 
 data = read_csv("AI/data.csv")
 
@@ -32,18 +33,16 @@ y = torch.tensor(data['health_risk_encoded'])
 input_dim = x.shape[1]  # Get how many columns
 output_dim = len(data['health_risk_encoded'].unique())  # Gets how many classifications
 
-import pickle
-
 with open('AI/cache/vectorizer.pkl', 'wb') as f:
-    pickle.dump(vectorizer, f)
+    dump(vectorizer, f)
 with open('AI/cache/normalizer.pkl', 'wb') as f:
-    pickle.dump(normalizer, f)
+    dump(normalizer, f)
 with open('AI/cache/gender_encoder.pkl', 'wb') as f:
-    pickle.dump(gender_encoder, f)
+    dump(gender_encoder, f)
 with open('AI/cache/cholesterol_encoder.pkl', 'wb') as f:
-    pickle.dump(cholesterol_encoder, f)
+    dump(cholesterol_encoder, f)
 with open('AI/cache/scaler.pkl', 'wb') as f:
-    pickle.dump(scaler, f)
+    dump(scaler, f)
 
 model = HealthRiskNet(input_dim=input_dim, output_dim=output_dim)
 #model.load_state_dict(torch.load('model.pth'))  # Loads the trained model

@@ -7,33 +7,44 @@
   <form method="POST">
     {{ form.hidden_tag() }}
 
-    <div class="form-group">
-      {{ form.age.label }} {{ form.age(class="form-control") }}
+    <div class="form-group mb-3">
+      {{ form.age.label(class="form-label") }}
+      {{ form.age(class="form-control") }}
     </div>
 
-    <div class="form-group">
-      {{ form.gender.label }} {{ form.gender(class="form-control") }}
+    <div class="form-group mb-3">
+      {{ form.gender.label(class="form-label") }}
+      {{ form.gender(class="form-select") }}
     </div>
 
-    <div class="form-group">
-      {{ form.cholesterol.label }} {{ form.cholesterol(class="form-control") }}
+    <div class="form-group mb-3">
+      {{ form.cholesterol.label(class="form-label") }}
+      {{ form.cholesterol(class="form-select") }}
     </div>
 
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        {{ form.systolic_bp.label }} {{ form.systolic_bp(class="form-control") }}
+    <div class="row">
+      <div class="form-group col-md-6 mb-3">
+        {{ form.systolic_bp.label(class="form-label") }}
+        {{ form.systolic_bp(class="form-control") }}
       </div>
-      <div class="form-group col-md-6">
-        {{ form.diastolic_bp.label }} {{ form.diastolic_bp(class="form-control") }}
+      <div class="form-group col-md-6 mb-3">
+        {{ form.diastolic_bp.label(class="form-label") }}
+        {{ form.diastolic_bp(class="form-control") }}
       </div>
     </div>
 
-    <div class="form-group">
-        {{ form.habits.label }}
-        {{ form.habits(class="form-control", multiple=True) }}
+    <div class="form-group mb-3">
+      {{ form.habits.label(class="form-label") }}
+      <div>
+        {% for subfield in form.habits %}
+          <div class="form-check mb-1">
+            {{ subfield(class="form-check-input", id=subfield.id) }}
+            <label class="form-check-label" for="{{ subfield.id }}">{{ subfield.label.text }}</label>
+          </div>
+        {% endfor %}
+      </div>
     </div>
 
-    </div>
     {{ form.submit(class="btn btn-primary btn-block") }}
   </form>
 
