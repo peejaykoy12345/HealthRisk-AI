@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import FloatField, IntegerField, SelectField, SelectMultipleField, SubmitField
 from wtforms.validators import DataRequired
-from wtforms.widgets import ListWidget, Select, CheckboxInput
+from wtforms.widgets import ListWidget, CheckboxInput
 
 class InputForm(FlaskForm):
     age = IntegerField('Age', validators=[DataRequired()])
