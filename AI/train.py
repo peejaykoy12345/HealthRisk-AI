@@ -1,11 +1,11 @@
 import torch
-from AI.model import HealthRiskNet
+from model import HealthRiskNet
 from pandas import read_csv
 from numpy import hstack, array
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler
 
-data = read_csv("data.csv")
+data = read_csv("AI/data.csv")
 
 vectorizer = TfidfVectorizer(max_features=1000)
 tfid_features = vectorizer.fit_transform(data["habits"].astype(str))  # Vectorize
@@ -35,7 +35,7 @@ output_dim = len(data['health_risk_encoded'].unique())  # Gets how many classifi
 model = HealthRiskNet(input_dim=input_dim, output_dim=output_dim)
 #model.load_state_dict(torch.load('model.pth'))  # Loads the trained model
 #model.eval()  # Puts model into predicting mode
-#model.fit(x, y, 300)  # Trains the model
+model.fit(x, y, 300)  # Trains the model
 
 test_row = { 
     'age': 45,
