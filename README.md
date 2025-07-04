@@ -8,6 +8,5 @@ A machine learning model that predicts disease risk based on lifestyle habits an
 
 - ✅ Clean tabular dataset (CSV)
 - ✅ Binary encoding for habits (smoking, drinking, etc.)
-- ✅ Logistic Regression / Random Forest / Neural Net options
 - ✅ CLI-based prediction system
-- ✅ Scikit-learn + Pandas + Matplotlib
+- ✅ Scikit-learn + Pandas + PyTorch
