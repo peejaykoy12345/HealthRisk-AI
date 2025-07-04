@@ -29,5 +29,5 @@ class HealthRiskNet(nn.Module):
 
             if (epoch + 1) % 50 == 0:
                 print(f'Epoch {epoch+1}/{epochs}, Loss: {loss.item():.4f}')
-                save(self.model.state_dict(), 'model.pth')
+                save(self.state_dict(), 'AI/model.pth')
     

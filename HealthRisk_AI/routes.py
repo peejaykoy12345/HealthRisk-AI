@@ -7,6 +7,7 @@ from HealthRisk_AI.forms import InputForm
 from AI.predict import predict_risk
 from pandas import DataFrame
 from numpy import hstack
+from pickle import load
 
 @app.route('/')
 @app.route('/home')
@@ -17,19 +18,27 @@ def home():
 def predict():
     form = InputForm()
     if form.validate_on_submit():
+
+        with open('AI/cache/vectorizer.pkl', 'rb') as f:
+            vectorizer = load(f)
+        with open('AI/cache/normalizer.pkl', 'rb') as f:
+            normalizer = load(f)
+        with open('AI/cache/gender_encoder.pkl', 'rb') as f:
+            gender_encoder = load(f)
+        with open('AI/cache/cholesterol_encoder.pkl', 'rb') as f:
+            cholesterol_encoder = load(f)
+        with open('AI/cache/scaler.pkl', 'rb') as f:
+            scaler = load(f)
+
         selected_habits = form.habits.data
         habits = ';'.join(selected_habits)
-        vectorizer = TfidfVectorizer(max_features=1000)
-        tfid_features = vectorizer.fit_transform([habits])  
-        normalizer = Normalizer()
-        tfid_features = normalizer.fit_transform(tfid_features)
+        tfid_features = vectorizer.transform([habits])  
+        tfid_features = normalizer.transform(tfid_features)
 
         gender = form.gender.data
         cholesterol = form.cholesterol.data
-        gender_encoder = LabelEncoder()
-        cholesterol_encoder = LabelEncoder()
-        gender = gender_encoder.fit_transform([gender])[0]
-        cholesterol = cholesterol_encoder.fit_transform([cholesterol])[0]
+        gender = gender_encoder.transform([gender])[0]
+        cholesterol = cholesterol_encoder.transform([cholesterol])[0]
 
         age = form.age.data
         systolic_bp = form.systolic_bp.data
@@ -42,8 +51,7 @@ def predict():
             'systolic_bp': systolic_bp,
             'diastolic_bp': diastolic_bp
         }]) 
-        scaler = StandardScaler() 
-        numeric_features = scaler.fit_transform(numeric_features)
+        numeric_features = scaler.transform(numeric_features)
 
         data = hstack([numeric_features, tfid_features.toarray()]) 
         data = tensor(data, dtype=float32)
