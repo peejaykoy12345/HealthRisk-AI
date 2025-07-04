@@ -7,6 +7,6 @@ model.eval()
 
 classes = ['Low', 'Medium', 'High']
 
-def predict(x):
+def predict_risk(x):
     prediction = argmax(model(x))
     return classes[prediction.item()]

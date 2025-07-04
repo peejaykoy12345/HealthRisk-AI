@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}Prediction Result{% endblock %}
+{% block content %}
+
+<div class="container py-5">
+  <div class="text-center">
+    <h2 class="mb-4">Your Health Risk Prediction</h2>
+
+    {% if prediction %}
+      <div class="alert alert-info p-4">
+        <h4 class="mb-3">Result:</h4>
+        <p class="lead">{{ prediction }}</p>
+      </div>
+    {% else %}
+      <div class="alert alert-warning">
+        No prediction was generated.
+      </div>
+    {% endif %}
+
+    <a href="{{ url_for('predict') }}" class="btn btn-primary mt-4">Try Another Prediction</a>
+  </div>
+</div>
+
+{% endblock %}
