@@ -71,6 +71,5 @@ class InputForm(FlaskForm):
         ],
         option_widget=CheckboxInput(),   
         widget=ListWidget(prefix_label=False),
-        validators=[DataRequired()]
     )
     submit = SubmitField('Predict')

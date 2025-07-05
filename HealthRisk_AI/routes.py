@@ -58,7 +58,36 @@ def predict():
 
         prediction = predict_risk(data)
 
-        return render_template('result.html', prediction=prediction)
+        recommendations = []
+
+        if age >= 50 and "no exercise" in habits:
+            recommendations.append("Being over 50 with no exercise increases health risk. Try adding light daily walks.")
+
+        if "smokes" in habits:
+            recommendations.append("Smoking increases risk significantly. Consider quitting or seeking support.")
+
+        if "smokes heavily" in habits:
+            recommendations.append("Heavy smoking is linked to high health risk. Seek immediate medical advice.")
+
+        if "no exercise" in habits or "sedentary" in habits:
+            recommendations.append("Lack of physical activity increases cardiovascular risk. Start with light movement.")
+
+        if "stressed" in habits:
+            recommendations.append("Stress can raise blood pressure and risk. Consider mindfulness, yoga, or counseling.")
+
+        if systolic_bp >= 140 or diastolic_bp >= 90:
+            recommendations.append("High blood pressure detected. Consult a doctor for management.")
+
+        if cholesterol == "Very High":
+            recommendations.append("Cholesterol levels are dangerously high. A low-fat diet and medication may help.")
+
+        if "drinks heavily" in habits or ("drinks" in habits and age >= 50):
+            recommendations.append("Heavy alcohol use at your age can increase heart risk. Reduce consumption.")
+
+        if prediction == "Low":
+            recommendations.append("Keep up your healthy lifestyle! Regular activity and no smoking are great.")
+
+        return render_template('result.html', prediction=prediction, recommendations=recommendations)
 
     return render_template('predict.html', form=form)
     

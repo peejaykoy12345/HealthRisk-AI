@@ -1,110 +1,89 @@
 age,gender,systolic_bp,diastolic_bp,cholesterol,habits,health_risk
-45,M,130,85,High,"smokes occasionally; drinks",Medium
-61,F,150,90,Very High,"smokes heavily; no exercise",High
-29,F,110,70,Normal,"non-smoker; regular exercise",Low
-52,M,145,95,High,"drinks; no exercise",High
-38,M,120,80,Normal,"smokes rarely; exercises weekly",Low
-67,F,160,100,Very High,"smokes; sedentary",High
-33,M,125,85,Borderline,"non-smoker; drinks",Medium
-41,F,140,88,High,"non-smoker; light exercise",Medium
-55,M,155,95,Very High,"smokes; drinks heavily",High
-26,F,115,75,Normal,"non-smoker; runs daily",Low
-48,M,135,90,High,"drinks occasionally; no exercise",Medium
-60,F,150,92,Very High,smokes; no exercise,High
-36,M,122,80,Normal,"non-smoker; gym twice a week",Low
-44,F,140,90,High,"smokes; stressed; no exercise",High
-39,M,128,85,Borderline,"drinks; low activity",Medium
-58,F,160,105,Very High,"smokes heavily; drinks",High
-31,M,118,78,Normal,"non-smoker; jogs often",Low
-50,F,142,88,High,"smokes occasionally; no exercise",High
-42,M,132,86,Borderline,"drinks; exercises sometimes",Medium
-63,F,155,95,Very High,"smokes; sedentary lifestyle",High
-28,M,116,76,Normal,"non-smoker; swims regularly",Low
-47,M,138,89,High,"smokes; drinks moderately",High
-53,F,148,93,Very High,"smokes heavily; no activity",High
-35,M,124,82,Normal,"non-smoker; yoga weekly",Low
-59,F,158,98,Very High,"smokes; drinks; no exercise",High
-40,M,129,84,Borderline,"drinks occasionally; walks",Medium
-66,M,162,102,Very High,"smokes; completely sedentary",High
-30,F,112,72,Normal,"non-smoker; cycles daily",Low
-49,M,136,87,High,"smokes rarely; drinks",Medium
-57,F,152,96,Very High,"smokes heavily; no movement",High
-32,M,121,79,Normal,"non-smoker; hikes weekends",Low
-43,F,139,89,High,"smokes; no physical activity",High
-54,M,146,94,High,"drinks heavily; no exercise",High
+13,M,125,80,Borderline,"smokes occasionally; no exercise",High
+17,F,118,75,Normal,"non-smoker; runs daily",Low
+15,M,130,85,High,"smokes heavily; drinks",High
+19,F,140,90,High,"smokes; stressed; no exercise",High
+14,M,110,70,Normal,"non-smoker; athlete",Low
+16,F,150,95,Very High,"smokes heavily; no movement",High
+18,M,145,92,High,"drinks heavily; no exercise",High
+20,F,115,75,Normal,"non-smoker; yoga weekly",Low
+21,M,160,100,Very High,"smokes; drinks; sedentary",High
+22,F,120,80,Normal,"smokes rarely; exercises weekly",Low
+23,M,155,98,Very High,"smokes; drinks heavily",High
+24,F,125,85,Borderline,"non-smoker; drinks",Medium
+25,M,135,88,High,"smokes occasionally; no exercise",High
+26,F,165,105,Very High,"smokes; bedridden",High
+27,M,122,80,Normal,"non-smoker; gym twice a week",Low
+28,F,148,93,Very High,"smokes heavily; no activity",High
+29,M,116,76,Normal,"non-smoker; swims regularly",Low
+30,F,158,98,Very High,"smokes; drinks; no exercise",High
+31,M,129,84,Borderline,"drinks occasionally; walks",Medium
+32,F,162,102,Very High,"smokes; completely sedentary",High
+33,M,112,72,Normal,"non-smoker; cycles daily",Low
+34,F,152,96,Very High,"smokes heavily; no movement",High
+35,M,121,79,Normal,"non-smoker; hikes weekends",Low
+36,F,156,99,Very High,"smokes; drinks; bedridden",High
 37,M,126,83,Borderline,"smokes occasionally; walks",Medium
-62,F,156,99,Very High,"smokes; drinks; bedridden",High
-27,M,114,74,Normal,"non-smoker; martial arts",Low
-51,M,141,90,High,"smokes; drinks; no exercise",High
-46,F,137,88,High,"non-smoker; stressed; some walking",Medium
-64,M,159,101,Very High,"smokes heavily; wheelchair-bound",High
-34,M,123,81,Normal,"non-smoker; runs 3x week",Low
-56,F,153,97,Very High,"smokes; no movement",High
-25,F,109,69,Normal,"non-smoker; athlete",Low
-68,M,165,110,Very High,"smokes; drinks; bedridden",High
-41,M,131,87,Borderline,"drinks; occasional walks",Medium
-44,F,138,89,High,"smokes; desk job",High
-58,M,154,98,Very High,"smokes; drinks; no activity",High
-29,F,111,71,Normal,"non-smoker; dances weekly",Low
-72,F,168,108,Very High,"smokes heavily; immobile",High
-38,M,127,84,Borderline,"drinks; light gardening",Medium
-47,F,135,88,High,"smokes occasionally; no exercise",High
-52,M,144,93,High,"drinks; no physical activity",High
-33,F,119,77,Normal,"non-smoker; pilates",Low
-60,M,157,100,Very High,"smokes; drinks; sedentary",High
-36,F,120,78,Normal,"non-smoker; walks daily",Low
-65,F,163,104,Very High,"smokes; no movement",High
-39,M,130,86,Borderline,"drinks; walks dog",Medium
-48,F,136,87,High,"smokes; office job",High
-53,M,147,94,High,"smokes; drinks; no exercise",High
-31,F,117,76,Normal,"non-smoker; swims",Low
-69,M,166,107,Very High,"smokes heavily; immobile",High
-42,M,133,88,Borderline,"drinks; golf occasionally",Medium
-45,F,134,86,High,"smokes; no activity",High
-50,M,143,92,High,"drinks heavily; no exercise",High
-34,F,118,75,Normal,"non-smoker; rock climbing",Low
-70,F,169,109,Very High,"smokes; bedridden",High
-37,M,125,83,Borderline,"drinks; walks sometimes",Medium
-49,F,132,85,High,"smokes occasionally; no exercise",High
-54,M,149,95,Very High,"smokes; drinks; no movement",High
-28,M,113,73,Normal,"non-smoker; soccer player",Low
-63,M,161,103,Very High,"smokes heavily; wheelchair",High
-40,F,128,84,Borderline,"non-smoker; stressed; walks",Medium
-46,M,140,90,High,"smokes; drinks; desk job",High
-55,F,151,96,Very High,"smokes; no activity",High
-32,M,122,80,Normal,"non-smoker; gym member",Low
-71,M,167,108,Very High,"smokes; immobile",High
-43,M,137,89,High,"drinks; no exercise",High
-57,F,150,94,Very High,"smokes heavily; no movement",High
-35,F,121,77,Normal,"non-smoker; yoga enthusiast",Low
-59,M,156,99,Very High,"smokes; drinks; sedentary",High
-44,M,139,89,High,"smokes; no physical activity",High
-51,F,145,93,High,"smokes; drinks; no exercise",High
-30,M,115,74,Normal,"non-smoker; runner",Low
-66,F,164,105,Very High,"smokes; bedridden",High
-41,M,134,88,Borderline,"drinks; occasional cycling",Medium
-47,M,141,91,High,"smokes; drinks; no activity",High
-56,F,155,98,Very High,"smokes heavily; no movement",High
-33,M,124,82,Normal,"non-smoker; fitness class",Low
-72,M,170,110,Very High,"smokes; immobile",High
-48,M,142,92,High,"drinks; no exercise",High
-62,F,159,102,Very High,"smokes; no activity",High
-36,F,119,76,Normal,"non-smoker; walks daily",Low
-53,M,148,95,Very High,"smokes; drinks; sedentary",High
-45,M,135,87,High,"smokes occasionally; no exercise",High
-58,F,157,100,Very High,"smokes heavily; immobile",High
-31,F,116,75,Normal,"non-smoker; active lifestyle",Low
-67,M,163,104,Very High,"smokes; drinks; bedridden",High
-42,F,132,86,Borderline,"non-smoker; light walking",Medium
-49,M,143,92,High,"smokes; drinks; no exercise",High
-60,F,158,101,Very High,"smokes; no movement",High
-34,M,123,81,Normal,"non-smoker; tennis player",Low
-69,F,168,108,Very High,"smokes heavily; immobile",High
-39,M,129,85,Borderline,"drinks; occasional hiking",Medium
-50,F,144,93,High,"smokes; no physical activity",High
-55,M,152,97,Very High,"smokes; drinks; sedentary",High
-27,F,110,70,Normal,non-smoker; athlete,Low
-73,F,171,111,Very High,"smokes; bedridden",High
-43,M,138,90,High,"drinks; no exercise",High
-61,M,160,103,Very High,"smokes heavily; no movement",High
-35,M,127,84,Normal,"non-smoker; gym regular",Low
+38,F,137,88,High,"non-smoker; stressed; some walking",Medium
+39,M,159,101,Very High,"smokes heavily; wheelchair-bound",High
+40,F,123,81,Normal,"non-smoker; runs 3x week",Low
+41,M,153,97,Very High,"smokes; no movement",High
+42,F,109,69,Normal,"non-smoker; athlete",Low
+43,M,165,110,Very High,"smokes; drinks; bedridden",High
+44,F,131,87,Borderline,"drinks; occasional walks",Medium
+45,M,138,89,High,"smokes; desk job",High
+46,F,154,98,Very High,"smokes; drinks; no activity",High
+47,M,111,71,Normal,"non-smoker; dances weekly",Low
+48,F,168,108,Very High,"smokes heavily; immobile",High
+49,M,127,84,Borderline,"drinks; light gardening",Medium
+50,F,135,88,High,"smokes occasionally; no exercise",High
+51,M,144,93,High,"drinks; no physical activity",High
+52,F,119,77,Normal,"non-smoker; pilates",Low
+53,M,157,100,Very High,"smokes; drinks; sedentary",High
+54,F,120,78,Normal,"non-smoker; walks daily",Low
+55,M,163,104,Very High,"smokes; no movement",High
+56,F,130,86,Borderline,"drinks; walks dog",Medium
+57,M,136,87,High,"smokes; office job",High
+58,F,147,94,High,"smokes; drinks; no exercise",High
+59,M,117,76,Normal,"non-smoker; swims",Low
+60,F,166,107,Very High,"smokes heavily; immobile",High
+61,M,133,88,Borderline,"drinks; golf occasionally",Medium
+62,F,134,86,High,"smokes; no activity",High
+63,M,143,92,High,"drinks heavily; no exercise",High
+64,F,118,75,Normal,"non-smoker; rock climbing",Low
+65,M,169,109,Very High,"smokes; bedridden",High
+66,F,125,83,Borderline,"drinks; walks sometimes",Medium
+67,M,132,85,High,"smokes occasionally; no exercise",High
+68,F,149,95,Very High,"smokes; drinks; no movement",High
+69,M,113,73,Normal,"non-smoker; soccer player",Low
+70,F,161,103,Very High,"smokes heavily; wheelchair",High
+71,M,128,84,Borderline,"non-smoker; stressed; walks",Medium
+72,F,140,90,High,"smokes; drinks; desk job",High
+73,M,151,96,Very High,"smokes; no activity",High
+74,F,122,80,Normal,"non-smoker; gym member",Low
+75,M,167,108,Very High,"smokes; immobile",High
+76,F,137,89,High,"drinks; no exercise",High
+77,M,150,94,Very High,"smokes heavily; no movement",High
+78,F,121,77,Normal,"non-smoker; yoga enthusiast",Low
+79,M,156,99,Very High,"smokes; drinks; sedentary",High
+80,F,139,89,High,"smokes; no physical activity",High
+81,M,145,93,High,"smokes; drinks; no exercise",High
+82,F,115,74,Normal,"non-smoker; runner",Low
+83,M,164,105,Very High,"smokes; bedridden",High
+84,F,134,88,Borderline,"drinks; occasional cycling",Medium
+85,M,141,91,High,"smokes; drinks; no activity",High
+86,F,155,98,Very High,"smokes heavily; no movement",High
+87,M,124,82,Normal,"non-smoker; fitness class",Low
+88,F,170,110,Very High,"smokes; immobile",High
+89,M,142,92,High,"drinks; no exercise",High
+90,F,159,102,Very High,"smokes; no activity",High
+91,M,119,76,Normal,"non-smoker; walks daily",Low
+92,F,148,95,Very High,"smokes; drinks; sedentary",High
+93,M,135,87,High,"smokes occasionally; no exercise",High
+94,F,157,100,Very High,"smokes heavily; immobile",High
+95,M,116,75,Normal,"non-smoker; active lifestyle",Low
+96,F,163,104,Very High,"smokes; drinks; bedridden",High
+97,M,132,86,Borderline,"non-smoker; light walking",Medium
+98,F,143,92,High,"smokes; drinks; no exercise",High
+99,M,158,101,Very High,"smokes; no movement",High
+100,F,123,81,Normal,"non-smoker; tennis player",Low

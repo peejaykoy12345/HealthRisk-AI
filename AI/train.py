@@ -47,7 +47,7 @@ with open('AI/cache/scaler.pkl', 'wb') as f:
 model = HealthRiskNet(input_dim=input_dim, output_dim=output_dim)
 #model.load_state_dict(torch.load('model.pth'))  # Loads the trained model
 #model.eval()  # Puts model into predicting mode
-#model.fit(x, y, 300)  # Trains the model
+model.fit(x, y, 300)  # Trains the model
 
 test_row = { 
     'age': 45,

@@ -9,5 +9,8 @@ model.eval()
 classes = ['Low', 'Medium', 'High']
 
 def predict_risk(x):
-    prediction = argmax(model(x))
+    tensor_prediction = model(x)
+    prediction = argmax(tensor_prediction)
+    print(tensor_prediction, " | ", prediction)
+
     return classes[prediction.item()]
