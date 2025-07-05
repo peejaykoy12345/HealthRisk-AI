@@ -72,6 +72,9 @@ def process_habits(habits_string):
             print(f"Unknown habit: {habit}")
             continue
     return points / 4
+
+def boost_habits(habits_string):
+    return habits_string * 1.2
     
 
     

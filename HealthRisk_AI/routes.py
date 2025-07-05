@@ -5,9 +5,9 @@ from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler
 from HealthRisk_AI import app
 from HealthRisk_AI.forms import InputForm
 from AI.predict import predict_risk
-from AI.utils import process_habits
+from AI.utils import process_habits, boost_habits
 from pandas import DataFrame
-from numpy import hstack
+from numpy import hstack, array
 from pickle import load
 
 @app.route('/')
@@ -25,6 +25,8 @@ def predict():
             cholesterol_encoder = load(f)
         with open('AI/cache/scaler.pkl', 'rb') as f:
             scaler = load(f)
+        with open('AI/cache/habits_scaler.pkl', 'rb') as f:
+            habits_scaler = load(f)
 
         selected_habits = form.habits.data
         habits = ';'.join(selected_habits)
@@ -49,9 +51,10 @@ def predict():
         }]) 
         numeric_features = scaler.transform(numeric_features)
 
-        print([[processed_habits]])
+        processed_habits = habits_scaler.transform([[processed_habits]])[0][0]
+        boosted_habits = boost_habits(processed_habits)
 
-        numeric_features = hstack((numeric_features, [[processed_habits]]))
+        numeric_features = hstack((numeric_features, array([[boosted_habits]])))
 
         data = tensor(numeric_features, dtype=float32)
 
