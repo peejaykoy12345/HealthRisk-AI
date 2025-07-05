@@ -5,6 +5,7 @@ from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler
 from HealthRisk_AI import app
 from HealthRisk_AI.forms import InputForm
 from AI.predict import predict_risk
+from AI.utils import process_habits
 from pandas import DataFrame
 from numpy import hstack
 from pickle import load
@@ -18,11 +19,6 @@ def home():
 def predict():
     form = InputForm()
     if form.validate_on_submit():
-
-        with open('AI/cache/vectorizer.pkl', 'rb') as f:
-            vectorizer = load(f)
-        with open('AI/cache/normalizer.pkl', 'rb') as f:
-            normalizer = load(f)
         with open('AI/cache/gender_encoder.pkl', 'rb') as f:
             gender_encoder = load(f)
         with open('AI/cache/cholesterol_encoder.pkl', 'rb') as f:
@@ -32,8 +28,8 @@ def predict():
 
         selected_habits = form.habits.data
         habits = ';'.join(selected_habits)
-        tfid_features = vectorizer.transform([habits])  
-        tfid_features = normalizer.transform(tfid_features)
+        
+        processed_habits = process_habits(habits)
 
         gender = form.gender.data
         cholesterol = form.cholesterol.data
@@ -49,12 +45,15 @@ def predict():
             'gender_encoded': gender,
             'cholesterol_encoded': cholesterol,
             'systolic_bp': systolic_bp,
-            'diastolic_bp': diastolic_bp
+            'diastolic_bp': diastolic_bp,
         }]) 
         numeric_features = scaler.transform(numeric_features)
 
-        data = hstack([numeric_features, tfid_features.toarray()]) 
-        data = tensor(data, dtype=float32)
+        print([[processed_habits]])
+
+        numeric_features = hstack((numeric_features, [[processed_habits]]))
+
+        data = tensor(numeric_features, dtype=float32)
 
         prediction = predict_risk(data)
 
