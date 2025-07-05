@@ -7,9 +7,10 @@ model.load_state_dict(load('AI/model.pth'))
 model.eval()
 
 def predict_risk(x):
+    print(x)
     tensor_prediction = model(x)
     prediction = argmax(tensor_prediction)
-    label = prediction.item()
+    label = classes[prediction.item()]
     print(tensor_prediction, " | ", prediction, " | ", label)
 
     return label
