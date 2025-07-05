@@ -10,7 +10,7 @@ age,gender,systolic_bp,diastolic_bp,cholesterol,habits,health_risk
 55,M,155,95,Very High,"smokes; drinks heavily",High
 26,F,115,75,Normal,"non-smoker; runs daily",Low
 48,M,135,90,High,"drinks occasionally; no exercise",Medium
-60,F,150,92,Very High,"smokes; no exercise",High
+60,F,150,92,Very High,smokes; no exercise,High
 36,M,122,80,Normal,"non-smoker; gym twice a week",Low
 44,F,140,90,High,"smokes; stressed; no exercise",High
 39,M,128,85,Borderline,"drinks; low activity",Medium
@@ -103,7 +103,7 @@ age,gender,systolic_bp,diastolic_bp,cholesterol,habits,health_risk
 39,M,129,85,Borderline,"drinks; occasional hiking",Medium
 50,F,144,93,High,"smokes; no physical activity",High
 55,M,152,97,Very High,"smokes; drinks; sedentary",High
-27,F,110,70,Normal,"non-smoker; athlete",Low
+27,F,110,70,Normal,non-smoker; athlete,Low
 73,F,171,111,Very High,"smokes; bedridden",High
 43,M,138,90,High,"drinks; no exercise",High
 61,M,160,103,Very High,"smokes heavily; no movement",High
