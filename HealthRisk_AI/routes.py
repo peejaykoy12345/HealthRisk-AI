@@ -1,7 +1,5 @@
 from flask import render_template,url_for
 from torch import tensor, float32
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler
 from HealthRisk_AI import app
 from HealthRisk_AI.forms import InputForm
 from AI.predict import predict_risk
