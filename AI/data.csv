@@ -1,101 +1,101 @@
 age,gender,systolic_bp,diastolic_bp,cholesterol,habits,health_risk
-94,M,137,104,Very High,smokes rarely; wheelchair,High
-87,M,138,100,Very High,completely sedentary,High
-58,F,126,119,Borderline,pilates; swims,Medium
-46,F,93,95,Very High,pilates,Medium
-31,M,147,90,Very High,wheelchair-bound,High
-94,F,155,90,Very High,light gardening; immobile,High
-40,F,90,73,Very High,fitness class; gym,Medium
-52,F,123,81,Borderline,some walking,Medium
-76,M,161,116,Normal,pilates,High
-24,M,148,96,Very High,hikes; drinks heavily; no activity,High
-40,M,130,109,High,no physical activity,High
-61,F,125,87,Borderline,smokes rarely; cycles daily,Medium
-14,M,120,72,High,no activity; non-smoker; dances weekly,Medium
-17,M,139,109,Very High,smokes; completely sedentary; gym twice a week,High
-56,F,96,88,Borderline,light gardening; dances weekly,Medium
-51,M,169,88,Normal,walks; yoga enthusiast,Medium
-87,F,132,93,Very High,completely sedentary; some walking; swims,High
-72,M,175,76,High,some walking; light walking,Medium
-92,M,95,114,Very High,gym member; gym,Medium
-54,F,160,113,Normal,dances weekly,Medium
-88,M,140,79,Very High,swims regularly; wheelchair,High
-80,F,104,116,Borderline,wheelchair,High
-23,F,174,105,Normal,walks sometimes,Medium
-20,F,111,90,High,sedentary,High
-74,F,135,66,Normal,gym,Medium
-78,M,168,62,Borderline,soccer player; drinks heavily; swims,High
-17,M,147,92,Normal,athlete; occasional cycling; walks,Low
-23,F,163,112,Borderline,drinks occasionally; swims regularly,Medium
-39,M,162,99,High,runner; dances weekly,Low
-42,M,171,71,Very High,rock climbing,Medium
-80,M,133,91,Very High,tennis player,Medium
-50,M,150,72,Normal,swims regularly; cycles daily,Low
-55,M,121,112,High,rock climbing; active lifestyle,Medium
-40,F,153,113,Very High,rock climbing,Medium
-33,F,100,62,Very High,tennis player; smokes heavily; runs daily,High
-81,F,112,74,High,active lifestyle; sedentary,Medium
-60,F,163,74,High,runner; smokes heavily,High
-69,F,117,110,Normal,soccer player; yoga enthusiast,Medium
-81,F,108,96,Borderline,immobile,High
-47,F,107,88,High,smokes; smokes rarely,High
-47,M,111,119,High,wheelchair; yoga weekly; runs daily,High
-91,M,109,70,High,wheelchair-bound; exercises weekly; no activity,High
-46,F,165,111,Normal,rock climbing; hikes weekends,Medium
-99,M,129,77,High,walks sometimes; gym twice a week; wheelchair,High
-92,M,179,92,Very High,exercises weekly; light gardening; runs 3x week,Medium
-65,M,155,72,Borderline,hikes weekends,Medium
-15,M,130,66,Normal,cycles daily; gym twice a week,Low
-46,F,135,108,Borderline,smokes heavily; athlete; hikes,High
-15,M,102,84,Normal,yoga weekly; exercises weekly,Low
-48,M,122,61,Very High,drinks; runs 3x week; dances weekly,Medium
-71,M,169,101,High,light gardening; smokes,High
-14,M,167,103,Normal,some walking; smokes heavily; swims regularly,High
-14,F,176,112,Very High,rock climbing; light walking,Medium
-28,M,169,98,Very High,walks dog,Medium
-68,F,121,101,Normal,no exercise,High
-92,F,121,116,Borderline,walks dog; cycles,Medium
-57,M,171,89,Borderline,smokes occasionally; walks; bedridden,High
-12,M,101,77,Normal,occasional cycling,Medium
-86,F,160,69,Borderline,light walking; swims,Medium
-21,F,180,116,High,cycles; no activity,High
-35,F,152,82,Borderline,rock climbing,Medium
-25,F,117,112,Borderline,drinks; runner,Medium
-97,M,112,104,High,wheelchair-bound; athlete; no exercise,High
-20,F,94,97,Normal,runs 3x week,Low
-94,M,128,97,Normal,walks; soccer player,Low
-98,M,102,95,Very High,bedridden,High
-32,F,131,86,Very High,occasional cycling; cycles; smokes heavily,High
-64,F,176,77,Normal,yoga enthusiast,Low
-18,M,151,114,High,pilates; swims regularly,Medium
-10,F,111,89,Normal,tennis player,Low
-100,M,165,114,High,gym member; walks daily; no exercise,Medium
-21,F,108,99,Normal,drinks,Medium
-28,M,115,84,Very High,walks daily,Medium
-57,F,92,79,Borderline,drinks,Medium
-19,F,153,88,Normal,exercises weekly,Medium
-26,M,161,64,Borderline,athlete; no exercise; pilates,Medium
-12,F,168,81,Borderline,fitness class; no exercise,Medium
-11,M,109,97,Very High,walks sometimes; no activity; wheelchair,High
-98,F,150,117,Borderline,cycles daily,Medium
-47,M,142,100,Borderline,yoga enthusiast; gym member,Medium
-35,F,148,73,Borderline,hikes,Low
-22,F,97,110,Normal,swims; smokes rarely; soccer player,Medium
-56,M,159,72,Normal,rock climbing; exercises weekly; walks dog,Medium
-89,M,144,105,Very High,gym,High
-46,F,136,92,Normal,runs 3x week; smokes; occasional cycling,High
-64,F,112,67,Normal,smokes,Medium
-93,F,152,104,Very High,active lifestyle; yoga enthusiast; yoga weekly,Medium
-61,M,94,88,Very High,drinks heavily; swims regularly,High
-45,F,155,120,Very High,no physical activity; gym; smokes occasionally,High
-68,M,118,101,Normal,tennis player; pilates,Medium
-32,F,131,91,High,walks sometimes; runs 3x week; sedentary,Medium
-86,F,133,63,Very High,no exercise,High
-92,M,148,85,High,light walking,Medium
-66,M,141,74,High,smokes occasionally; active lifestyle,Medium
-92,F,131,108,Very High,non-smoker; gym member; occasional cycling,Medium
-13,F,151,98,Very High,wheelchair-bound; walks; runs 3x week,High
-69,M,149,115,Normal,hikes weekends; smokes heavily; smokes occasionally,High
-91,F,147,103,Borderline,dances weekly; runner; drinks,Medium
-62,F,159,60,Borderline,light gardening,Medium
-12,M,167,99,Normal,smokes; active lifestyle,Medium
+94,M,137,104,Very High,smokes rarely; wheelchair,Very High Risk
+87,M,138,100,Very High,completely sedentary,Very High Risk
+58,F,126,119,Borderline,pilates; swims,High Risk
+46,F,93,95,Very High,pilates,High Risk
+31,M,147,90,Very High,wheelchair-bound,Very High Risk
+94,F,155,90,Very High,light gardening; immobile,Very High Risk
+40,F,90,73,Very High,fitness class; gym,Medium Risk
+52,F,123,81,Borderline,some walking,Medium Risk
+76,M,161,116,Normal,pilates,Very High Risk
+24,M,148,96,Very High,hikes; drinks heavily; no activity,Very High Risk
+40,M,130,109,High,no physical activity,High Risk
+61,F,125,87,Borderline,smokes rarely; cycles daily,Medium Risk
+14,M,120,72,High,no activity; non-smoker; dances weekly,Medium Risk
+17,M,139,109,Very High,smokes; completely sedentary; gym twice a week,Very High Risk
+56,F,96,88,Borderline,light gardening; dances weekly,Medium Risk
+51,M,169,88,Normal,walks; yoga enthusiast,Medium Risk
+87,F,132,93,Very High,completely sedentary; some walking; swims,Very High Risk
+72,M,175,76,High,some walking; light walking,High Risk
+92,M,95,114,Very High,gym member; gym,High Risk
+54,F,160,113,Normal,dances weekly,High Risk
+88,M,140,79,Very High,swims regularly; wheelchair,Very High Risk
+80,F,104,116,Borderline,wheelchair,Very High Risk
+23,F,174,105,Normal,walks sometimes,High Risk
+20,F,111,90,High,sedentary,High Risk
+74,F,135,66,Normal,gym,Medium Risk
+78,M,168,62,Borderline,soccer player; drinks heavily; swims,Very High Risk
+17,M,147,92,Normal,athlete; occasional cycling; walks,Low Risk
+23,F,163,112,Borderline,drinks occasionally; swims regularly,Medium Risk
+39,M,162,99,High,runner; dances weekly,Low Risk
+42,M,171,71,Very High,rock climbing,High Risk
+80,M,133,91,Very High,tennis player,High Risk
+50,M,150,72,Normal,swims regularly; cycles daily,No Risk
+55,M,121,112,High,rock climbing; active lifestyle,High Risk
+40,F,153,113,Very High,rock climbing,High Risk
+33,F,100,62,Very High,tennis player; smokes heavily; runs daily,Very High Risk
+81,F,112,74,High,active lifestyle; sedentary,High Risk
+60,F,163,74,High,runner; smokes heavily,High Risk
+69,F,117,110,Normal,soccer player; yoga enthusiast,Medium Risk
+81,F,108,96,Borderline,immobile,Very High Risk
+47,F,107,88,High,smokes; smokes rarely,High Risk
+47,M,111,119,High,wheelchair; yoga weekly; runs daily,Very High Risk
+91,M,109,70,High,wheelchair-bound; exercises weekly; no activity,Very High Risk
+46,F,165,111,Normal,rock climbing; hikes weekends,Medium Risk
+99,M,129,77,High,walks sometimes; gym twice a week; wheelchair,Very High Risk
+92,M,179,92,Very High,exercises weekly; light gardening; runs 3x week,High Risk
+65,M,155,72,Borderline,hikes weekends,Medium Risk
+15,M,130,66,Normal,cycles daily; gym twice a week,No Risk
+46,F,135,108,Borderline,smokes heavily; athlete; hikes,High Risk
+15,M,102,84,Normal,yoga weekly; exercises weekly,No Risk
+48,M,122,61,Very High,drinks; runs 3x week; dances weekly,High Risk
+71,M,169,101,High,light gardening; smokes,High Risk
+14,M,167,103,Normal,some walking; smokes heavily; swims regularly,High Risk
+14,F,176,112,Very High,rock climbing; light walking,High Risk
+28,M,169,98,Very High,walks dog,High Risk
+68,F,121,101,Normal,no exercise,High Risk
+92,F,121,116,Borderline,walks dog; cycles,Medium Risk
+57,M,171,89,Borderline,smokes occasionally; walks; bedridden,High Risk
+12,M,101,77,Normal,occasional cycling,Low Risk
+86,F,160,69,Borderline,light walking; swims,Medium Risk
+21,F,180,116,High,cycles; no activity,High Risk
+35,F,152,82,Borderline,rock climbing,Medium Risk
+25,F,117,112,Borderline,drinks; runner,Medium Risk
+97,M,112,104,High,wheelchair-bound; athlete; no exercise,Very High Risk
+20,F,94,97,Normal,runs 3x week,Low Risk
+94,M,128,97,Normal,walks; soccer player,Low Risk
+98,M,102,95,Very High,bedridden,Very High Risk
+32,F,131,86,Very High,occasional cycling; cycles; smokes heavily,High Risk
+64,F,176,77,Normal,yoga enthusiast,No Risk
+18,M,151,114,High,pilates; swims regularly,Medium Risk
+10,F,111,89,Normal,tennis player,No Risk
+100,M,165,114,High,gym member; walks daily; no exercise,High Risk
+21,F,108,99,Normal,drinks,Low Risk
+28,M,115,84,Very High,walks daily,High Risk
+57,F,92,79,Borderline,drinks,Medium Risk
+19,F,153,88,Normal,exercises weekly,Low Risk
+26,M,161,64,Borderline,athlete; no exercise; pilates,Medium Risk
+12,F,168,81,Borderline,fitness class; no exercise,Medium Risk
+11,M,109,97,Very High,walks sometimes; no activity; wheelchair,High Risk
+98,F,150,117,Borderline,cycles daily,Medium Risk
+47,M,142,100,Borderline,yoga enthusiast; gym member,Medium Risk
+35,F,148,73,Borderline,hikes,Low Risk
+22,F,97,110,Normal,swims; smokes rarely; soccer player,Medium Risk
+56,M,159,72,Normal,rock climbing; exercises weekly; walks dog,Medium Risk
+89,M,144,105,Very High,gym,High Risk
+46,F,136,92,Normal,runs 3x week; smokes; occasional cycling,High Risk
+64,F,112,67,Normal,smokes,Medium Risk
+93,F,152,104,Very High,active lifestyle; yoga enthusiast; yoga weekly,Medium Risk
+61,M,94,88,Very High,drinks heavily; swims regularly,High Risk
+45,F,155,120,Very High,no physical activity; gym; smokes occasionally,High Risk
+68,M,118,101,Normal,tennis player; pilates,Medium Risk
+32,F,131,91,High,walks sometimes; runs 3x week; sedentary,High Risk
+86,F,133,63,Very High,no exercise,High Risk
+92,M,148,85,High,light walking,Medium Risk
+66,M,141,74,High,smokes occasionally; active lifestyle,Medium Risk
+92,F,131,108,Very High,non-smoker; gym member; occasional cycling,Medium Risk
+13,F,151,98,Very High,wheelchair-bound; walks; runs 3x week,High Risk
+69,M,149,115,Normal,hikes weekends; smokes heavily; smokes occasionally,High Risk
+91,F,147,103,Borderline,dances weekly; runner; drinks,Medium Risk
+62,F,159,60,Borderline,light gardening,Medium Risk
+12,M,167,99,Normal,smokes; active lifestyle,Medium Risk

@@ -10,6 +10,11 @@
       <div class="alert alert-info p-4">
         <h4 class="mb-3">Result:</h4>
         <p class="lead">{{ prediction }}</p>
+        {% if confidence > 70 %}
+          <p>Model confidence: {{ confidence }}%</p>
+        {% else %}
+          <p>Model is uncertain about the prediction</p>
+        {% endif %}
       </div>
 
       {% if recommendations %}

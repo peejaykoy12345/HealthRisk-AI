@@ -60,7 +60,7 @@ with open('AI/cache/habits_scaler.pkl', 'wb') as f:
     dump(habits_scaler, f)
 
 model = HealthRiskNet(input_dim=input_dim, output_dim=output_dim)
-model.fit(x_train, y_train, 180)  # Trains the model
+#model.fit(x_train, y_train, 400)  # Trains the model
 
 with torch.no_grad():
     y_pred = model(x_val)
@@ -68,5 +68,5 @@ with torch.no_grad():
         predicted = torch.argmax(y_pred[i]).item()
         actual = y_val[i].item()
         if predicted != actual:
-            print(f"Data: {y_pred[i]} Predicted: {classes[predicted]}, Actual: {classes[actual]}")
+            print(f"Data: {x_val[i]} Predicted: {classes[predicted]}, Actual: {classes[actual]}")
 

@@ -58,7 +58,7 @@ def predict():
 
         data = tensor(numeric_features, dtype=float32)
 
-        prediction = predict_risk(data)
+        prediction, confidence = predict_risk(data)
 
         recommendations = []
 
@@ -89,7 +89,7 @@ def predict():
         if prediction == "Low":
             recommendations.append("Keep up your healthy lifestyle! Regular activity and no smoking are great.")
 
-        return render_template('result.html', prediction=prediction, recommendations=recommendations)
+        return render_template('result.html', prediction=prediction, confidence=confidence, recommendations=recommendations)
 
     return render_template('predict.html', form=form)
     
