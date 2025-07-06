@@ -27,27 +27,28 @@
           </ul>
         </div>
 
-        {% set show_sim = false %}
-        {% for rec in recommendations %}
-          {% if 'smok' in rec.lower() or 'drink' in rec.lower() %}
-            {% set show_sim = true %}
-          {% endif %}
-        {% endfor %}
+        {% set recs_joined = recommendations | join(' ') | lower %}
+        {% set show_smoking = 'smok' in recs_joined %}
+        {% set show_drinking = 'alcohol' in recs_joined %}
 
-        {% if show_sim %}
+        {% if show_smoking or show_drinking %}
         <div class="mt-5 text-start mx-auto" style="max-width: 720px;">
           <h4 class="mb-3 text-primary">What-If Simulator 🔮</h4>
-          <p class="text-muted">Adjust your habits and see how your risk might change (for fun, not actual medical advice 😅)</p>
+          <p class="text-muted">Adjust your habits and see how your risk might change</p>
 
+          {% if show_smoking %}
           <div class="mb-3">
             <label for="smokingSlider" class="form-label">🚬 Cigarettes per day: <span id="smokeVal">5</span></label>
             <input type="range" class="form-range" id="smokingSlider" min="0" max="20" value="5" oninput="simulateRisk()">
           </div>
+          {% endif %}
 
+          {% if show_drinking %}
           <div class="mb-3">
             <label for="drinkingSlider" class="form-label">🍺 Drinks per week: <span id="drinkVal">3</span></label>
             <input type="range" class="form-range" id="drinkingSlider" min="0" max="14" value="3" oninput="simulateRisk()">
           </div>
+          {% endif %}
 
           <div class="alert alert-secondary">
             Simulated Risk: <strong id="simRisk">Moderate 🟡</strong>
@@ -56,13 +57,23 @@
 
         <script>
           function simulateRisk() {
-            const smoke = parseInt(document.getElementById("smokingSlider").value);
-            const drink = parseInt(document.getElementById("drinkingSlider").value);
+            let smoke = 0;
+            let drink = 0;
 
-            document.getElementById("smokeVal").innerText = smoke;
-            document.getElementById("drinkVal").innerText = drink;
+            const smokeSlider = document.getElementById("smokingSlider");
+            const drinkSlider = document.getElementById("drinkingSlider");
 
-            let riskScore = smoke * 2 + drink * 1.5;
+            if (smokeSlider) {
+              smoke = parseInt(smokeSlider.value);
+              document.getElementById("smokeVal").innerText = smoke;
+            }
+
+            if (drinkSlider) {
+              drink = parseInt(drinkSlider.value);
+              document.getElementById("drinkVal").innerText = drink;
+            }
+
+            const riskScore = smoke * 2 + drink * 1.5;
             let risk = "Low 🟢";
             if (riskScore > 20) risk = "High 🔴";
             else if (riskScore > 10) risk = "Moderate 🟡";
@@ -70,7 +81,7 @@
             document.getElementById("simRisk").innerText = risk;
           }
 
-          window.addEventListener('DOMContentLoaded', simulateRisk);
+          document.addEventListener("DOMContentLoaded", simulateRisk);
         </script>
         {% endif %}
       {% endif %}

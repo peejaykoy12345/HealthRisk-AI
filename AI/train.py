@@ -59,7 +59,7 @@ with open('AI/cache/habits_scaler.pkl', 'wb') as f:
     dump(habits_scaler, f)
 
 model = HealthRiskNet(input_dim=input_dim, output_dim=output_dim)
-#model.fit(x_train, y_train, 400)  # Trains the model
+#model.fit(x_train, y_train, 600)  # Trains the model
 
 test_toggle = False
 

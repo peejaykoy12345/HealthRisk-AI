@@ -41,6 +41,7 @@ habit_risk_scores = {
     "hikes": -5,
     "hikes weekends": -5,
 
+    "yoga": -3,
     "yoga weekly": -5,
     "yoga enthusiast": -5,
     "pilates": -5,
