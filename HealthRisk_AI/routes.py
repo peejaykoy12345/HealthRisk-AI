@@ -90,4 +90,12 @@ def predict():
         return render_template('result.html', prediction=prediction, confidence=confidence, recommendations=recommendations)
 
     return render_template('predict.html', form=form)
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/how_it_works')
+def how_it_works():
+    return render_template('how_it_works.html')
     

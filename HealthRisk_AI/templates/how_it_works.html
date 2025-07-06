@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}How It Works{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h2 class="mb-4">🔍 How HealthRisk AI Works</h2>
+  <p class="mb-4 text-muted">A simple explanation of what goes on behind the scenes.</p>
+
+  <div class="mb-4">
+    <h4>📥 1. You Fill Out the Form</h4>
+    <p>You enter your age, gender, blood pressure, cholesterol, and select your lifestyle habits (like smoking or drinking).</p>
+  </div>
+
+  <div class="mb-4">
+    <h4>🧼 2. Your Data Gets Processed</h4>
+    <ul>
+      <li>Gender and cholesterol are turned into numbers (encoding)</li>
+      <li>All values are scaled to help the model perform better</li>
+      <li>Habits are converted into a “risk point” based on what you selected</li>
+    </ul>
+  </div>
+
+  <div class="mb-4">
+    <h4>🧠 3. PyTorch Model Makes a Prediction</h4>
+    <p>We use a simple <strong>PyTorch linear model</strong> that calculates your health risk based on your processed data.</p>
+    <p><em>Fun fact:</em> Your <strong>habits score is boosted by 1.1x</strong> to give it more influence in the prediction. Lifestyle matters!</p>
+  </div>
+
+  <div class="mb-4">
+    <h4>📊 4. You Get a Result + Confidence</h4>
+    <p>The model gives a prediction like "High Risk" or "Low Risk", along with a confidence percentage (unless it’s unsure).</p>
+  </div>
+
+  <div class="mb-4">
+    <h4>📝 5. Personalized Recommendations</h4>
+    <p>If we detect high-risk factors like smoking or high blood pressure, we’ll show helpful suggestions to improve your health.</p>
+  </div>
+
+  <div class="mb-4">
+    <h4>🔮 6. What-If Simulator</h4>
+    <p>If we mention smoking or drinking in the recommendations, you'll see a simulator that lets you adjust your habits and see how your risk might change — all in real-time using JavaScript.</p>
+  </div>
+
+  <p class="text-muted mt-5">⚠️ This tool is for educational and awareness purposes only. Not actual medical advice.</p>
+</div>
+{% endblock %}
