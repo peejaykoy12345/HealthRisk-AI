@@ -1,4 +1,4 @@
-from flask import render_template,url_for
+from flask import render_template
 from torch import tensor, float32
 from HealthRisk_AI import app
 from HealthRisk_AI.forms import InputForm

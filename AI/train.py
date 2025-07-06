@@ -1,8 +1,7 @@
 import torch
 from pandas import read_csv
 from numpy import hstack
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
 from pickle import dump
 
